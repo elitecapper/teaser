@@ -1,73 +1,365 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<script type="text/javascript" src="js/jquery-1.4.1.js"></script>
-	<script  type="text/javascript" src="js/jquery.lwtCountdown-1.0.js"></script>
-	<script  type="text/javascript" src="js/misc.js"></script>
-	<link rel="Stylesheet" type="text/css" href="style/main.css">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+		<!-- BASICS -->
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Elite Capper</title>
+        <meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />	
+		<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/style.css">
 
-	<title>Elite Capper</title>
-</head>
 
-<body>
 
-	<div id="container">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-		<h1>Скоро открытие</h1>
-		<h2 class="subtitle">Ожидайте обновления страницы</h2>
+		<meta name="viewport" content="width=device-width, initial-scale=0.5">
 
-		<!-- Countdown dashboard start -->
-		<div id="countdown_dashboard">
-			<div class="dash weeks_dash">
-				<span class="dash_title">weeks</span>
-				<div class="digit">0</div>
-				<div class="digit">0</div>
+		<!-- skin -->
+		<link rel="stylesheet" href="skin/default.css">
+		<style>
+
+			h1,h2,h3,h4 {
+				font-weight: lighter;
+			}
+			.align-center img {
+				max-width: 10em;
+				margin-top: 50px;
+				margin-bottom: 20px
+			}
+			.align-center p {
+				font-size: 1.5em;
+			}
+			.align-center h1,h2 {
+				line-height: 1.2em;
+			}
+			.img-responsive {
+				display: block;
+				max-height: 100%;
+				min-width: 100%;
+			}
+			#explore {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				/* bring your own prefixes */
+				transform: translate(-50%, -50%);
+				width: 30em;
+				height: 10em;
+				border: 3px solid white;
+				z-index: 90000;
+				text-align: center;
+				background: rgba(0,0,0,0.3);
+				transition: background .3s ease-in-out;
+				border-radius: 10px;
+			}
+			#explore:hover {
+				transition: background .3s ease-in-out;
+				background: rgba(0,0,0,1);
+			}
+			#explore h4 {
+				color: white;
+				font-size: 8em;
+				font-weight: 100;
+			}
+			#owl-demo {
+				z-index: -9000;
+			}
+			hr {
+				-moz-border-bottom-colors: none;
+				-moz-border-image: none;
+				-moz-border-left-colors: none;
+				-moz-border-right-colors: none;
+				-moz-border-top-colors: none;
+				border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+				border-style: solid none;
+				border-width: 1px 0;
+				margin: 18px 0;
+			}
+			.validation {
+				color: white;
+			}
+		</style>
+    </head>
+	 
+    <body>
+
+		<section class=" appear ">
+			<div id="explore">
+				<h4>Войти</h4>
 			</div>
 
-			<div class="dash days_dash">
-				<span class="dash_title">days</span>
-				<div class="digit">0</div>
-				<div class="digit">0</div>
+			<div id="owl-demo" class="owl-carousel owl-theme">
+
+				<div class="item"><img src="img/soccer.jpg" alt="The Last of us" class="img-responsive"></div>
+				<div class="item"><img src="img/hokkey.jpg" alt="The Last of us" class="img-responsive"></div>
+				<div class="item"><img src="img/tennis.jpg" alt="The Last of us" class="img-responsive"></div>
+				<div class="item"><img src="img/basketball.jpg" alt="The Last of us" class="img-responsive"></div>
+
+			</div>
+		</section>
+		<section id="main">
+			<div class="row mar-bot40">
+				<div class="col-md-6 col-md-offset-3">
+
+					<div class="align-center">
+
+						<img src="img/logo.png" id="logo" style="max-width: 25em;">
+
+						<h2 class="slogan">Добро пожаловать на уникальный сервис Elite Capper</h2>
+						<p>
+							Elite Capper - это синоним к слову «Богатство», так как с первых дней сотрудничества Мы способны предоставить
+							Вам возможность сделать огромные деньги под надежным крылом компании, проверенной годами, компании,
+							упоминание одного имени которой в узких кругах равноценно самым крепким гарантиям.
+						</p>
+						<hr>
+						<p>
+							Да, речь идёт о легендарных Договорных матчах, информация о которых долгое время была закрытой.
+							Но в компании профессионалов Мы смогли преобразовать её - информацию - ещё в более выгодный бизнес.
+							<br>
+						</p>
+					</div>
+				</div>
 			</div>
 
-			<div class="dash hours_dash">
-				<span class="dash_title">hours</span>
-				<div class="digit">0</div>
-				<div class="digit">0</div>
+		</section>
+
+
+		<!-- services -->
+
+		<!-- spacer section:stats -->
+
+
+
+		<section id="section-works" class="section appear clearfix">
+			<div class="container">
+
+
+							<div class="row">
+									<div class="align-center">
+										<img class="" style="" src="img/medal.png">
+										<h1>Лидирующая позиция на рынке Договоных матчей</h1>
+										<p>
+											Elite Capper - бренд, занимающий лучшие позиции за счет собственной торговой площадки,
+											индивидауального подхода к каждому клиенту,
+											органичного совмещения
+											точного рассчета с профессионализмом, и наличия лучших деловых партнеров по всему миру.
+										</p>
+									</div>
+							</div>
+
+
+							<div class="row">
+									<div class="align-center">
+										<img class="" style="" src="img/shield.png">
+										<h1>100% проходимость</h1>
+										<p>
+											Глубокий анализ информации, получаемой от собственных агентов  по Договорным матчам,
+											позволяет быть увереным в исходе события.
+										</p>
+									</div>
+							</div>
+
+
+							<div class="row">
+									<div class="align-center">
+										<img class="" style="" src="img/certificate.png">
+										<h1>Гарантии</h1>
+										<p>
+											Мы имеем глубокое уважение к каждому клиенту, предоставляя незыблимые гарантии, отчетность и персонального менеджера.
+										</p>
+									</div>
+							</div>
+
+						</div>
+
+
 			</div>
 
-			<div class="dash minutes_dash">
-				<span class="dash_title">minutes</span>
-				<div class="digit">0</div>
-				<div class="digit">0</div>
-			</div>
+		</section>
+			
+		<!-- about -->
 
-			<div class="dash seconds_dash">
-				<span class="dash_title">seconds</span>
-				<div class="digit">0</div>
-				<div class="digit">0</div>
-			</div>
+		<!-- /about -->
+		
 
-		</div>
-		<!-- Countdown dashboard end -->
-		<script language="javascript" type="text/javascript">
-			jQuery(document).ready(function() {
-				$('#countdown_dashboard').countDown({
-					targetDate: {
-						'day': 		1,
-						'month': 	4,
-						'year': 	2015,
-						'hour': 	12,
-						'min': 		0,
-						'sec': 		0
+		<!-- contact -->
+		<section id="section-contact" class="section appear clearfix">
+			<div class="container">
+				<div class="row mar-bot40">
+					<div class="col-md-offset-3 col-md-6">
+						<div class="section-header">
+							<h2 class="animated" data-animation="bounceInUp">Свяжитесь с нами:</h2>
+							<p>Заполнив эту простую форму, вы в автоматическом режиме отправите свою заявку нашим менеджерам, которые займусться
+							дальнейшей работой с вами<sup>*</sup></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="cform" id="contact-form">
+							<div id="sendmessage">
+								Ваша заявка успешно зарегистрирована!
+							</div>
+							<form action="" method="get" role="form" class="contactForm">
+							  <div class="form-group">
+								<label for="name">Ваше ФИО</label>
+								<input type="text" name="name" class="form-control" id="name" placeholder="Ваше ФИО:" data-rule="maxlen:6" data-msg="Введите как минимум 6 символов!" />
+								  <div class="validation btn-danger"></div>
+							  </div>
+							  <div class="form-group">
+								<label for="email">Ваш Email</label>
+								<input type="email" class="form-control" name="email" id="email" placeholder="Ваш Email:" data-rule="email" data-msg="Введите корректный email" />
+								  <div class="validation btn-danger"></div>
+							  </div>
+								<div class="form-group">
+									<label for="src">Ссылка на профиль Вконтакте (опционально)</label>
+									<input type="text" class="form-control" name="src" id="src" placeholder="Ссылка на ваш профиль Вконтакте" data-rule="maxlen:6" data-msg="Введите как минимум 6 символов!" />
+									<div class="validation btn-danger"></div>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" id="agree" value="" data-rule="required" data-msg="Должно быть отмечено!">Я подтверждаю, что мне уже исполнилось 18 лет (для жителей Казахстана - 21 год) и что я прочитал <a href="license.html">Правила</a> и согласен с ними.</label>
+								</div>
+							  
+							  <button type="submit" class="btn btn-theme" id="postme" >ОТПРАВИТЬ СООБЩЕНИЕ</button>
+							</form>
+
+						</div>
+					</div>
+					<!-- ./span12 -->
+				</div>
+				
+			</div>
+		</section>
+	<section id="footer" class="section footer">
+		<div class="container">
+
+			<a href="https://metrica.yandex.com/stat/?id=29246340&amp;from=informer"
+			   target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/29246340/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+												   style="width:88px; height:31px; border:0;" alt="Yandex.Metrica" title="Yandex.Metrica: data for today (page views, visits and unique users)" onclick="try{Ya.Metrika.informer({i:this,id:29246340,lang:'en'});return false}catch(e){}"/></a>
+			<script type="text/javascript">
+				(function (d, w, c) {
+					(w[c] = w[c] || []).push(function() {
+						try {
+							w.yaCounter29246340 = new Ya.Metrika({id:29246340,
+								webvisor:true,
+								clickmap:true,
+								trackLinks:true,
+								accurateTrackBounce:true});
+						} catch(e) { }
+					});
+
+					var n = d.getElementsByTagName("script")[0],
+							s = d.createElement("script"),
+							f = function () { n.parentNode.insertBefore(s, n); };
+					s.type = "text/javascript";
+					s.async = true;
+					s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+					if (w.opera == "[object Opera]") {
+						d.addEventListener("DOMContentLoaded", f, false);
+					} else { f(); }
+				})(document, window, "yandex_metrika_callbacks");
+			</script>
+
+			<script type='text/javascript'>
+			$(document).ready(function(){
+				$('#agree').click(function(){
+					if(!$("#agree").attr('checked') && !$("#age").attr('checked')){
+						$('#postme').attr("disabled","disabled");
+					} else {
+						$('#postme').removeAttr('disabled');
 					}
 				});
 			});
 		</script>
-	
-	</div>
-</body>
 
+			<noscript><div><img src="//mc.yandex.ru/watch/29246340" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+			<!-- /Yandex.Metrika counter -->
+
+			<!-- /Yandex.Metrika informer -->
+
+			<div class="row">
+				<p class="text-center" style="font-size: 0.65em">* - заполняя данную форму вы принимаете и соглашаетесь с <a href="license.html" target="_blank">правилами использования данного сервиса</a>, предоставлением вашей личной
+					информации для внутрисервисной обработки в соотвествии с
+					<a href="http://www.zakonrf.info/zakon-o-personalnyh-dannyh/">Федеральный закон РФ "О персональных данных"</a> и что мне уже исполнилось 18 лет (для жителей Казахстана - 21 год) </p>
+			</div>
+
+
+		</div>
+
+	</section>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script src="js/jquery.localscroll-1.2.7-min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/jquery.appear.js"></script>
+	<script src="js/validate.js"></script>
+		<!-- Important Owl stylesheet -->
+		<link rel="stylesheet" href="css/owl.carousel.css">
+
+		<!-- Default Theme -->
+		<link rel="stylesheet" href="css/owl.theme.css">
+
+		<!--  jQuery 1.7+  -->
+
+		<!-- Include js plugin -->
+		<script src="js/owl.carousel.js"></script>
+
+		<!-- Yandex.Metrika informer -->
+
+		<!-- Yandex.Metrika counter -->
+
+		<script>
+			$('.owl-carousel').owlCarousel({
+				loop:true,
+				margin:10,
+				autoPlay: 5000,
+				slideSpeed : 1000,
+				paginationSpeed : 1000,
+				singleItem:true
+
+				// "singleItem:true" is a shortcut for:
+				// items : 1,
+				// itemsDesktop : false,
+				// itemsDesktopSmall : false,
+				// itemsTablet: false,
+				// itemsMobile : false
+			});
+			$.extend($.scrollTo.defaults, {
+				axis: 'y',
+				duration: 800
+			});
+		</script>
+		<script>
+			$(function() {
+				function notify() {
+					$(this).fadeOut(1000);
+					setTimeout(function(){
+						$('body').scrollTo('#main');
+					}, 1000);
+
+				}
+				$( "#explore" ).on( "click", notify );
+			});
+		</script>
+		<script type="text/javascript">
+			var mobile = (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+			if (mobile) {
+				$('#explore').hide();
+			}
+			else
+			{
+			}
+		</script>
+	</body>
 </html>
